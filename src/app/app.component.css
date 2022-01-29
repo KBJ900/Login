@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sarabun", sans-serif;
+}
+body{
+    margin-top: -30px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  padding: 121px 100px 261px 96px;
+  object-fit: contain;
+  background-image: radial-gradient(circle at 50% 48%, rgba(98, 156, 196, 0.25), rgba(32, 45, 66, 0.51) 91%);
+  background: url(../assets/img/rectangle-copy.png);
+ background-size: cover; 
+}
+
+
+
+
+::selection{
+  color: #fff;
+  background: #5372F0;
+}
+.wrapper{
+  width: 580px;
+  padding: 50px 40px 60px 40px;
+  border-radius: 7px;
+  text-align: center;
+  
+}
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper form{
+  margin: 40px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #ffffff;
+  border-top: #fff;
+  border-left: #fff;
+  border-right: #fff;
+  border-bottom-color: #fff;
+  transition: all 0.2s ease;
+}
+
+
+/* form .field input:focus,
+form .field.valid input{
+    
+} */
+
+/* 
+
+form .field.shake input,
+form .field.error input{
+  border-bottom-color: #dc3545;
+} */
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+/* .input-area .errorspan{
+  right: 15px;
+  color: #dc3545;
+} */
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #ffffff;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #fff;
+}
+form input::placeholder{
+  color: #fff;
+  font-size: 17px;
+}
+form input{
+  color: #fff;
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+  color: #fff;
+}
+.wrapper a{
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+
+.useradroitoverseas {
+    width: 174px;
+    height: 21px;
+    margin: 35px 152px 6px 7px;
+    font-family: Sarabun;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 20px;
+  background: #fff;
+  color: #202d42;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #fff;
+  
+}
+
+.Line-3-Copy-4 {
+    width: 178px;
+    height: 1px;
+    margin: 50px 48px 57px 53px;
+    border: solid 1px #fff;
+    display: none;
+  }
+
+.sign-txt{
+    color: #fff;
+}
+
+.cover{
+   
+}
+
+@media screen and (max-width: 800px){
+    .Line-3-Copy-4{
+        display: grid;
+    }
+    .wrapper{
+        width: 380px;
+        padding: 40px 30px 50px 30px;
+        border-radius: 6px;
+    }
+
+}
+
+#icon-placeholder-user{
+    background-image: url(./../assets/img/icon-users.svg);
+
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 3px;
+}
+
+#icon-placeholder-password{
+    background-image: url(./../assets/img/candado.svg);
+    
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}
+        
+    
